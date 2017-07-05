@@ -1,0 +1,35 @@
+Guide to GITHUB:
+
+gui version:
+	you can go to the repository and upload the files or folders and commit them (click the buttons)
+
+command line version:
+	A bit of background:
+		Repositories ->basically projects. We have local and remote. The local ones are the copies we have and the remote one is the ver on the net
+		Working directory -> the folder you're working locally in (without net, essentially a copy of the remote repo)
+		We add(that's the command) the files we wanna commit(make changes, command name) to a staging area. From here, we make changes to the remote repo
+		Commits -> states of the repo. These are like time snaps of what you worked on. These can be used to go between the your previous or next or current changes. Helpful, since even if you acc completely deleted files and folders, you can just get it back
+		Branches ->To make different versions of repository, which you can later merge with the main if you want
+		Clone -> to get instance of the repository
+		Pull -> copy changes from remote to local. Tip: When you're starting to add changes, pull the copy the most recent repo or git won't let you make those changes
+		
+		I'll upload imgs to make things clearer(it's gonna be in the same directory)
+		
+	Commands:
+		git init ->to initialize your folder with the hidden .git file which has the inner working of your repository or project
+		git add . -> add everything to stage
+		git add file/folder ->add particular file/folder to stage
+		git status ->to see which weren't gonna be added to the remote repo
+		git status -s ->to see what's the status of the file (added or not)
+		git remote add <alias-name> ->create a alias for the link to the repository. You can get the link from the link address at the web browser n add a .git extension. Or there's a gui option in the page (choose the https, didn't create a public key)
+		git remote remove <alias-name> ->to remove to link to another repository
+		git push <alias-name> master/branch-name ->to make changes to the online repo. btw the <alias-name> is usually origin 
+		git pull <alias-name> master/branch-name ->to get the current version of the repo to make changes to
+		git branch <branch-name> ->to make a branch to make another version branching from the current version. can be merged later
+		git branch ->to get list of branches, * indicates current branch
+		git checkout <branch-name> ->to move between branches
+
+Notes:
+	When you push, you have to put in a username and password for your github account. So be careful when you register
+	I haven't put the merge command yet, because I think for now we can keep the branches to test alternatives to show our trial and error
+
